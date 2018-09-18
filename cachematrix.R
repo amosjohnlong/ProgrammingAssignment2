@@ -21,7 +21,6 @@ makeCacheMatrix <- function(x = matrix()) {
 # For this assignment, we can assume the input matrix, x, is always invertible.
 
 cacheSolve <- function(x, ...) {
-    #cacheMatrix <- makeCacheMatrix(x)
     i <- x$getinverse()
     if(!is.null(i)) {
         message("getting cached data")
